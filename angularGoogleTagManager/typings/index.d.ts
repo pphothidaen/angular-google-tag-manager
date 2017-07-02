@@ -13,7 +13,7 @@ declare namespace angular.googletagmanager {
     }
 }
 
-declare module 'angular-googletagmanager' {
+declare module 'angular-google-tag-manager' {
     // export default "angularAccounting.Static";
     export default "googletagmanager.Static";
 

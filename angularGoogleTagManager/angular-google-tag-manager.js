@@ -1,21 +1,21 @@
-/* angular-googletagmanager.js */
+/* angular-google-tag-manager.js */
 
 /* global define */
 
 (function (root) {
 	'use strict';
 
-	function angularGoogletagmanager(angular) {
+	function angularGoogleTagManager(angular) {
 		/**
-		 * @name angularGoogletagmanager
+		 * @name angularGoogleTagManager
 		 *
 		 * @description
-		 * angularGoogletagmanager module provides googletagmanager functionality to angular.js apps.
+		 * angularGoogleTagManager module provides googletagmanager functionality to angular.js apps.
 		 */
-		return angular.module('angular-googletagmanager', [])
+		return angular.module('angular-google-tag-manager', [])
 
 			/**
-			 * @name angularGoogletagmanager.googletagmanager
+			 * @name angularGoogleTagManager.googletagmanager
 			 *
 			 * @description
 			 * accounting global as a constant
@@ -55,11 +55,11 @@
 	}
 
 	if (typeof define === 'function' && define.amd) {
-		define('angular-googletagmanager', ['angular'], angularGoogletagmanager);
+		define('angular-google-tag-manager', ['angular'], angularGoogleTagManager);
 	} else if (typeof exports === 'object') {
-		module.exports = angularGoogletagmanager(angular);
+		module.exports = angularGoogleTagManager(angular);
 	} else {
-		root.angularGoogletagmanager = angularGoogletagmanager(angular);
+		root.angularGoogleTagManager = angularGoogleTagManager(angular);
 	}
 	
 })(this);
